@@ -40,7 +40,7 @@ router.get("/:id", async (req, res) => {
 router.patch("/:id", async (req, res) => {
     
     try {
-        const updatedProduct = await Product.findOneAndUpdate(req.params._id,
+        const updatedProduct = await Product.findOneAndUpdate( req.params._id,
             req.body,{
                 new:true,
                 runValidators:true,
