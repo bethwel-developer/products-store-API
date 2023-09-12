@@ -7,7 +7,7 @@ const Product= require ("../models/productsmodel")
 router.post("/createproduct", async (req, res) => {
     
     try {
-        const createdProduct = await Product.create(req.body)
+        const createdProduct = await Product.create( req.bod y)
         res.status(200).json(createdProduct);
     } catch (err) {
        res.status(500).json(err) 
