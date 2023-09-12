@@ -55,7 +55,7 @@ router.patch("/:id", async (req, res) => {
 //delete product
 router.delete("/:id", async (req, res) => {
     try {
-        const deletedProduct = await Product.findOneAndDelete( eq.params._id)
+        const deletedProduct = await Product.findOneAndDelete( req.params._id)
         res.status(200).json(deletedProduct);
     } catch (err) {
        res.status(500).json(err) 
