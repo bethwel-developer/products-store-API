@@ -2,8 +2,6 @@ const router = require ("express").Router();
 const Product= require ("../models/productsmodel")
 
 
-
-
 router.post("/createproduct", async (req, res) => {
     
     try {
@@ -52,7 +50,7 @@ router.patch("/:id", async (req, res) => {
     }
 })
 
-//delete product
+ //delete product
 router.delete("/:id", async (req, res) => {
     try {
         const deletedProduct = await Product.findOneAndDelete( req.params._id)
