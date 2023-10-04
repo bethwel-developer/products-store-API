@@ -24,6 +24,7 @@ router.get("/products", async (req, res) => {
     }
 })
 
+
 //get one product
 router.get("/:id", async (req, res) => {
     
