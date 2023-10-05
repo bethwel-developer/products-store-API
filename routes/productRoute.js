@@ -1,7 +1,6 @@
 const router = require ("express").Router();
 const Product= require ("../models/productsmodel")
 
-
 router.post("/createproduct", async (req, res) => {
     
     try {
@@ -22,7 +21,6 @@ router.get("/products", async (req, res) => {
        res.status(500).json(err) 
     }
 })
-
 
 //get one product
 router.get("/:id", async (req, res) => {
