@@ -5,6 +5,7 @@ const mongoose = require ("mongoose")
 const port = 3000;
 const product = require ("./routes/productRoute")
 
+
 app.use(express.json())
 app.use(cors())
 require("dotenv").config();
