@@ -35,7 +35,6 @@ router.get("/:id", async (req, res) => {
     }
 })
 
-
 //update product
 router.patch("/:id", async (req, res) => {
     
