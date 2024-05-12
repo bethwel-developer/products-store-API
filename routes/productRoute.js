@@ -1,7 +1,6 @@
 
 const router = require ("express").Router();
 const Product= require ("../models/productsmodel")
-
 router.post("/createproduct", async (req, res) => {
     
     try {
