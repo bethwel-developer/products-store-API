@@ -12,7 +12,6 @@ router.post("/createproduct", async (req, res) => {
     }
 })
 
-
 //get all products
 router.get("/products", async (req, res) => {
     
